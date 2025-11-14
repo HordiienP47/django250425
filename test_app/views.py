@@ -3,7 +3,7 @@ from django.http import HttpResponse, HttpRequest
 
 def home_page(request: HttpRequest):
     return HttpResponse(
-        f"Hello, Elvish language!"
+        "Hello, Elvish language!"
     )
 def greetings(request: HttpRequest, user_name):
     return HttpResponse(
