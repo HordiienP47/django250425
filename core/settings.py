@@ -38,9 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    # local
-    # 'test_app.apps.TestAppConfig',
-    'library.apps.LibraryConfig',
+    #local
+    'test_app.apps.TestAppConfig',
+    #'library.apps.LibraryConfig',
 ]
 
 MIDDLEWARE = [
@@ -55,7 +55,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'core.urls'
-AUTH_USER_MODEL = 'library.User'  # чтобы джанго брал новую модель пользователя как базу, а не то, что он предлагает -- нужно переопределить этот парамтр, указав в каком приложении какая модель теперь будет выступать как модель пользователя
+#AUTH_USER_MODEL = 'library.User'  # чтобы джанго брал новую модель пользователя как базу, а не то, что он предлагает -- нужно переопределить этот парамтр, указав в каком приложении какая модель теперь будет выступать как модель пользователя
 
 TEMPLATES = [
     {
